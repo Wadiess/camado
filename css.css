@@ -5,6 +5,14 @@ html{
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#lol{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 ul{
 	position: absolute;
@@ -15,7 +23,7 @@ ul{
 	text-align: right;
 	font-size: 20px;
 	width: 415px;
-	right: 0px;
+
 }
 li a{
 	float: left;
@@ -111,4 +119,5 @@ h1:hover{
 	0%{box-shadow: 0px 0px 0px 	white;}
 	50%{box-shadow: 0px 0px 15px #8A3324;text-shadow: 0px 0px 10px white;}
 	75%{box-shadow: 0px 0px 15px #8A3324;text-shadow: 0px 0px 10px white;}
-	100%{box-shadow: 0px 0px 0px white;}
+	100%{box-shadow: 0px 0px 0px white;
+	}
