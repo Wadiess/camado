@@ -6,7 +6,7 @@ html{
 	background-attachment: fixed;
 	background-position: center;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap:	nowrap;
 	justify-content: center;
 }
 #lol{
