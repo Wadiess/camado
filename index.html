@@ -1,27 +1,48 @@
-<!-- HH welcome to my page and have fun stealing my source code-->
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>C-Cofee</title>
-		<meta charset="utf-8">
-		<link rel="shortcut icon" href="camado2.png">
-		<link rel="stylesheet" href="css.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+		<title>business_Web-site</title>
+		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<meta name="viewport" content="width=device-width, initial-scale=0.5">
-
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 	</head>
 	<body>
-		<div id="lol">
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Services</a></li>
-				<li><a href="">Contact us</a></li>
-			</ul>
-		</div>
-		<h1>Good communication is just as stimulating as black coffee,<br>and just as hard to sleep after</h1>
-		<input type="text" placeholder="Type something" name="text">
+		<section class="header">
+			<nav>
+				<a href="index.html"><img src="images/logo.png"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+
+					<ul>
+						<li><a href="">HOME</a></li>
+						<li><a href="">ABOUT</a></li>
+						<li><a href="">SERVICES</a></li>
+						<li><a href="">CONTACT</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+			<div class="text-box">
+				<h1>The best improving business ever</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor <br>sit amet, consectetur adipisicing elit, sed do eiusmod.
+				</p>
+				<a class="hero-btn" href="">Visit us know more</a>
+			</div>
+		</section>
+	 	<!-- ------------javascript toogle menu---------- -->
+
+		<script type="text/javascript">
+			var navLinks = document.getElementById("navLinks");
+			function showMenu(){
+				navLinks.style.right = '0'
+			}
+			function hideMenu(){
+				navLinks.style.right = '-200px'
+			}
+		</script>
+
 	</body>
 </html>
