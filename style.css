@@ -310,6 +310,15 @@ input[type="password"]{
     border-radius: 12px;
     cursor: pointer;
 }
+.header .form form .inp4 a{
+    text-decoration:none;
+    color:#618A2F;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: -10px;
+
+}
 .header .form form .inp4 input:hover{
     box-shadow:0 0 10px #86C232;
     transition: 0.5s;
