@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<title>business_Web-site</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-	</head>
-	<body>
-		<section class="header">
-			<nav>
-				<a href="index.html"><img src="images/logo.png"></a>
-				<div class="nav-links" id="navLinks">
-					<i class="fa fa-times" onclick="hideMenu()"></i>
-
-					<ul>
-						<li><a href="">HOME</a></li>
-						<li><a href="">ABOUT</a></li>
-						<li><a href="">SERVICES</a></li>
-						<li><a href="">CONTACT</a></li>
-					</ul>
-				</div>
-				<i class="fa fa-bars" onclick="showMenu()"></i>
-			</nav>
-			<div class="text-box">
-				<h1>The best improving business ever</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodLorem ipsum dolor <br>sit amet, consectetur adipisicing elit, sed do eiusmod.
-				</p>
-				<a class="hero-btn" href="">Visit us know more</a>
-			</div>
-		</section>
-	 	<!-- ------------javascript toogle menu---------- -->
-
-		<script type="text/javascript">
-			var navLinks = document.getElementById("navLinks");
-			function showMenu(){
-				navLinks.style.right = '0'
-			}
-			function hideMenu(){
-				navLinks.style.right = '-200px'
-			}
-		</script>
-
-	</body>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <div class="nav">
+                <nav>
+                    <div class="all">
+                        <a href="index.html"><h1>CAMADO</h1></a>
+                        <div class="list">
+                            <ul>
+                                <li id="home" ><a href="index.html">HOME</a> </li>
+                                <li id="about"><a href="#">ABOUT</a> </li>
+                                <li id="contact"><a href="#">CONTACT</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form class="search">
+                        <input placeholder="Type here..." type="text">
+                        <input type="submit" value="SEARCH">
+                    </form>
+                </nav>
+            </div>
+            <div class="main">
+                <h1>CA<span>M</span>ADO</h1>
+                <p>Hi! im <span>CAMADO</span> im a 18 years old college <span>Student</span><br>who wants to be the next <span>Elon musk</span>.</p>
+                <a href="https://fonts.google.com/specimen/Work+Sans?query=Work+Sans"><button>View More</button></a>
+            </div>
+            <div class="social">
+                <a href="https://web.facebook.com/Camado.Choaib" target="_blank" ><i id="fb" class="fa fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fa fa-envelope fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCyzRcJnLYugT56dnyjCojRw" target="_blank" ><i class="fa fa-youtube-square fa-2x"></i></a>
+            </div>
+            <div class="login">
+                <h1>Login Form</h1>
+                <div class="form">
+                    <form>
+                        <div class="inp1">
+                            <input autocomplete="off" id="name" placeholder="Email Address" type="email" required>
+                            <label id="label" for="name">&nbsp</label>
+                        </div>
+                        <div class="inp2">
+                            <input autocomplete="off" placeholder="Password" id="name" type="password" required>
+                            <label id="label" for="name">&nbsp</label>
+                        </div>
+                        <div class="inp3">
+                            <div class="check"><input type="checkbox"> Remember me</div>
+                            <a href="#">forgot password ?</a>
+                        </div>
+                        <div class="inp4">
+                            <input type="Submit" value="Log In">
+                        </div>
+                        <div class="or">
+                            <span>OR</span>
+                        </div>
+                        <div class="inp5">
+                            <span>Dont have an account? </span><a href="https://css-tricks.com/almanac/selectors/c/checked/">Create one</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>Copyright © 2021-2021 License, All rights reserved.</span>
+            </div>
+        </section>
+    </body>
 </html>
