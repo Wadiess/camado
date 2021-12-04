@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+html,body{
+    position: relative;
+}
+.header{
+    min-height: 100vh;
+	width: 100%;
+	background-color: #222629;
+	background-size: cover ;
+	background-position: center;
+	position: relative;
+}
+.header .sign{
+    width: 680px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+.header .sign h1{
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    border-radius: 20px 20px 0px 0px;
+    user-select: none;
+    border:none;
+    line-height: 125px;
+    border-bottom:2px solid #24252B;
+    background-color: #618A2F;
+    font-weight: bold;
+    font-size: 40px;
+    outline: none;
+    color:#F2F2F2;
+}
+.header .sign .form{
+    padding:10px 30px 50px 30px;
+}
+.header .sign .form .all{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+#inp{
+    position: relative;
+    width: 45%;
+    margin-top: 25px;
+}
+#inp input{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    position: relative;
+    border:none;
+    border-bottom: 1px solid#24252B;
+    background:transparent;
+    padding-left: 2px;
+    font-size: 18px;
+}
+#inp label{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+#inp label::after{
+    content: '';
+    width: 00%;
+    height: 4px;
+    background-color: #618A2F;
+    display: block;
+    transition: 1s;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+#inp input:focus+
+#label::after{
+    width: 101%;
+}
+.header .sign .form .all2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.header .sign .form .all2 .inp7{
+    width: 100%;
+}
+.header .sign .form .all2 .inp7 input[type="date"]{
+    outline: none;
+    border: none;
+    color: #618A2F;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+}
+.header .sign .form .all2 .inp8{
+    width: 100%;
+}
+.header .sign .form .all2 .inp8 input[type="radio"]{
+    margin:1px 10%;
+}
+.header .sign .form .all2 span{
+    font-size: 18px;
+}
+.header .sign .form .inp9{
+    font-size: 15px;
+}
+.header .sign .form .inp9 a{
+    font-weight: bold;
+    color:#618A2F;
+}
+.header .sign .form .inp10{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 40px;
+}
+.header .sign .form .inp10 input{
+    width: 70%;
+    height: 45px;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #618A2F;
+    color: #F2F2F2;
+    cursor: pointer;
+}
